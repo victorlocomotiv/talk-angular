@@ -4604,7 +4604,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   if (stack1 = helpers.title) { stack1 = stack1.call(depth0, {hash:{},data:data}); }
   else { stack1 = (depth0 && depth0.title); stack1 = typeof stack1 === functionType ? stack1.call(depth0, {hash:{},data:data}) : stack1; }
   buffer += escapeExpression(stack1)
-    + "</div>\n</div>\n<img src=\"img/logo_reclame_aqui.png\" class=\"ac-logo\">";
+    + "</div>\n</div>\n<img src=\"img/logo_reclame_aqui.png\" class=\"ac-logo\" width=\"100\" height=\"20\">";
   return buffer;
   });
 /* global Reveal */
@@ -4640,7 +4640,7 @@ Reveal.addEventListener('ready', function() {
   'use strict';
 
   var footer = TEMPLATES.footer({
-    title: 'Arquitetura Frontend'
+    title: 'Treinamento Angular JS (parte 1)'
   });
 
   var sectionEls = document.querySelectorAll('section:not(.stack)');
